@@ -6,6 +6,10 @@ import Error404 from "../views/Error404";
 import Componente1 from "../views/Componente1";
 import RouterSubRutas from "./RouterSubRutas";
 
+import InicioSubRuta from '../views/subrutas/InicioSubRuta';
+import SubRuta1 from '../views/subrutas/SubRuta1';
+import SubRuta2 from '../views/subrutas/SubRuta2';
+
 const RouterPrincipal = () => {
     return (
         <Router>
@@ -21,7 +25,7 @@ const RouterPrincipal = () => {
                             <NavLink to='/contact'>Contacto</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/subrutas/*'>Subrutas</NavLink>
+                            <NavLink to='/subrutas/inicio'>Subrutas</NavLink>
                         </li>
                     </ul>
             </nav>
@@ -31,7 +35,6 @@ const RouterPrincipal = () => {
                 <Route path='*' element={<Error404/>}/>
                 <Route path='/componente1' element={<Componente1/>}/>
                 <Route path='/subrutas/*' element={<RouterSubRutas/>}/>
-
             </Routes>
         </Router>
     );

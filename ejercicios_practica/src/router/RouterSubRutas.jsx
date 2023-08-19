@@ -10,21 +10,22 @@ const RouterSubRutas = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to='/inicio'>Inicio Subrutas</NavLink>
+                        <NavLink to='inicio'>Inicio Subrutas</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/subruta1'>Subruta 1</NavLink>
+                        <NavLink to='subruta1'>Subruta 1</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/subruta2'>Subruta 2</NavLink>
+                        <NavLink to='subruta2'>Subruta 2</NavLink>
                     </li>
                 </ul>
             </nav>
             <Outlet />
+
             <Routes>
-                <Route path='/inicio' element={<InicioSubRuta/>}></Route>
-                <Route path='/subruta1' element={<SubRuta1/>}></Route>
-                <Route path='/subruta2' element={<SubRuta2/>}></Route>
+                <Route path='inicio' element={<InicioSubRuta/>}></Route>
+                <Route path='subruta1' element={<SubRuta1/>}></Route>
+                <Route path='subruta2' element={<SubRuta2/>}></Route>
             </Routes>
             
         </>
